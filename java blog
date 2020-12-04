@@ -1,0 +1,122 @@
+package sonbukucu;
+
+import java.util.Scanner;
+
+public class sonbukucu {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int secim = 0;
+		int  kolay, normal, zor;
+		System.out.println("oynamak istediğiniz zorluk seviyesini seçiniz :");
+		System.out.println("1-Kolay    (500'lük) :");
+		System.out.println("2-Normal  (1000'lik) :");
+	    System.out.println("3-zor     (2000'lik) :");
+		secim = scan.nextInt();
+		
+		
+		switch (secim) {
+		case 1 :
+			Scanner giris = new Scanner (System.in);
+			int girilen, sayac;
+		int	sayi = (int)(Math.random()*500);
+			sayac=0;
+			
+			sayac++;
+			
+			while (true) {
+				System.out.println("Sayı Giriniz:");
+				girilen = giris.nextInt();
+				sayac++;
+			
+				for (int pc1=0; pc1>1 ; pc1++){
+			System.out.print ((int)(Math.random()* 500)+"\t");
+					System.out.println("Bilgisayarın Girdiği Değer...");
+				}
+				
+				if(girilen==sayi) {
+					System.out.println("Tebrikler " + sayac + "Defada Buldunuz...");
+					System.out.println("Program Bitti");
+					System.exit(0);
+				}
+				else if(girilen < sayi) 
+					System.out.println("Daha büyük bir sayı giriniz");
+				else System.out.println("Daha küçük bir sayı giriniz");
+			}
+			
+
+	case 2 :
+			Scanner giris2 = new Scanner (System.in);
+			int girilen1, sayac1;
+		int	sayi1 = (int)(Math.random()*1000);
+			sayac1=0;
+			
+			sayac1++;
+			while (true) {
+				System.out.println("Sayı Giriniz:");
+				girilen1 = giris2.nextInt();
+				sayac1++;
+			
+				for (int pc1=0; pc1>1 ; pc1++){
+			System.out.print ((int)(Math.random()* 1000)+"\t");
+					System.out.println("Bilgisayarın Girdiği Değer...");
+				}
+				if(girilen1==sayi1) {
+					System.out.println("Tebrikler " + sayac1 + "Defada Buldunuz...");
+					System.out.println("Program Bitti");
+					System.exit(0);
+				}
+				else if(girilen1 < sayi1) 
+					System.out.println("Daha büyük bir sayı giriniz");
+				else System.out.println("Daha küçük bir sayı giriniz");
+			}
+		case 3 :
+			Scanner giris3 = new Scanner (System.in);
+			int girilen2, sayac2;
+		int	sayi2 = (int)(Math.random()*2000);
+			sayac1=0;
+			sayac1++;
+			while (true) {
+				System.out.println("Sayı Giriniz:");
+				girilen = giris3.nextInt();
+				sayac1++;
+			
+				for (int pc1=0; pc1>1 ; pc1++){
+			System.out.print ((int)(Math.random()* 2000)+"\t");
+					System.out.println("Bilgisayarın Girdiği Değer...");
+				}
+				if(girilen==sayi2) {
+					System.out.println("Tebrikler " + sayac1 + "Defada Buldunuz...");
+					System.out.println("Program Bitti");
+					System.exit(0);
+				}
+				else if(girilen < sayi2) 
+					System.out.println("Daha büyük bir sayı giriniz");
+				else System.out.println("Daha küçük bir sayı giriniz");
+			}
+
+default :
+	System.out.println("yanlış girdi...");
+break;		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}}}
